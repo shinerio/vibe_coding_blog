@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: personal-blog-backend
+  
+  datasource:
+    url: jdbc:postgresql://localhost:5432/blog
+    username: blog_user
+    password: blog_pass
+    driver-class-name: org.postgresql.Driver
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+  
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api/v1
+
+logging:
+  level:
+    com.blog: DEBUG
+    org.springframework.web: DEBUG
+    org.hibernate.SQL: DEBUG
+
+# File storage configuration
+blog:
+  storage:
+    markdown-path: ./data/markdown
+    images-path: ./data/images
+
+# Application specific configuration
+app:
+  image:
+    storage:
+      path: ./data/images

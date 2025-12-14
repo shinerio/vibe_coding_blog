@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    environment:
+      - REACT_APP_API_URL=http://localhost:8080
+    networks:
+      - blog-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/blog
+      - SPRING_DATASOURCE_USERNAME=blog_user
+      - SPRING_DATASOURCE_PASSWORD=blog_pass
+    depends_on:
+      - db
+    networks:
+      - blog-network
+    volumes:
+      - ./data/markdown:/app/data/markdown
+      - ./data/images:/app/data/images
+
+  db:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_DB=blog
+      - POSTGRES_USER=blog_user
+      - POSTGRES_PASSWORD=blog_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend/src/main/resources/db/migration:/docker-entrypoint-initdb.d
+    networks:
+      - blog-network
+
+volumes:
+  postgres_data:
+
+networks:
+  blog-network:
+    driver: bridge

@@ -1,0 +1,7 @@
+.app-layout {
+  min-height: 100vh;
+}
+
+.app-layout .ant-layout-content {
+  padding: 0;
+}
