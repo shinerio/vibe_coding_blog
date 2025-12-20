@@ -47,7 +47,7 @@ apiClient.interceptors.request.use(
       }
     }
     
-    // 添加认证token
+    // 添加认证token（只有在存在时才添加）
     const token = localStorage.getItem('auth_token')
     if (token) {
       config.headers = {
@@ -55,11 +55,14 @@ apiClient.interceptors.request.use(
         Authorization: `Bearer ${token}`,
       }
     }
-    
-    // 添加请求ID用于追踪
-    config.headers = {
-      ...config.headers,
-      'X-Request-ID': `req_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+
+    // 只在非简单请求中添加请求ID（避免不必要的预检请求）
+    if (config.method && !['GET', 'POST'].includes(config.method.toLowerCase()) ||
+        (config.method === 'POST' && config.headers?.['Content-Type'] !== 'application/x-www-form-urlencoded')) {
+      config.headers = {
+        ...config.headers,
+        'X-Request-ID': `req_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+      }
     }
     
     return config

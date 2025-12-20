@@ -11,7 +11,11 @@
       "mcp__chrome-devtools__navigate_page",
       "mcp__chrome-devtools__take_snapshot",
       "mcp__chrome-devtools__take_screenshot",
-      "mcp__chrome-devtools__list_console_messages"
+      "mcp__chrome-devtools__list_console_messages",
+      "Bash(mvn test-compile exec:java:*)",
+      "Bash(taskkill:*)",
+      "Bash(cmd /c \"taskkill /F /IM java.exe\")",
+      "Bash(cmd:*)"
     ]
   }
 }

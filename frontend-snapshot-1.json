@@ -1,0 +1,118 @@
+uid=1_0 RootWebArea "个人博客系统" url="http://localhost:3001/"
+  uid=1_1 ignored
+    uid=1_2 ignored
+      uid=1_3 generic
+        uid=1_4 ignored
+          uid=1_5 main
+            uid=1_6 ignored
+              uid=1_7 complementary
+                uid=1_8 ignored
+                  uid=1_9 ignored
+                    uid=1_10 heading "个人博客" level="4"
+                      uid=1_11 StaticText "个人博客"
+                        uid=1_12 InlineTextBox "个人博客"
+                  uid=1_13 menu orientation="vertical"
+                    uid=1_14 menuitem "home 首页"
+                      uid=1_15 image "home"
+                      uid=1_16 ignored
+                        uid=1_17 StaticText "首页"
+                          uid=1_18 InlineTextBox "首页"
+                    uid=1_19 menuitem "file-text 文章管理"
+                      uid=1_20 image "file-text"
+                      uid=1_21 ignored
+                        uid=1_22 StaticText "文章管理"
+                          uid=1_23 InlineTextBox "文章管理"
+                    uid=1_24 menuitem "edit 写文章"
+                      uid=1_25 image "edit"
+                      uid=1_26 ignored
+                        uid=1_27 StaticText "写文章"
+                          uid=1_28 InlineTextBox "写文章"
+                    uid=1_29 menuitem "picture 图片管理"
+                      uid=1_30 image "picture"
+                      uid=1_31 ignored
+                        uid=1_32 StaticText "图片管理"
+                          uid=1_33 InlineTextBox "图片管理"
+              uid=1_34 ignored
+                uid=1_35 sectionheader
+                  uid=1_36 button "menu-fold"
+                    uid=1_37 ignored
+                      uid=1_38 image "menu-fold"
+                  uid=1_39 heading "个人博客管理系统" level="3"
+                    uid=1_40 StaticText "个人博客管理系统"
+                      uid=1_41 InlineTextBox "个人博客管理系统"
+                uid=1_42 main
+                  uid=1_43 navigation
+                    uid=1_44 list
+                      uid=1_45 listitem level="1"
+                        uid=1_46 link "home" url="http://localhost:3001/"
+                          uid=1_47 image "home"
+                  uid=1_48 ignored
+                    uid=1_49 ignored
+                      uid=1_50 heading "欢迎使用个人博客系统" level="2"
+                        uid=1_51 StaticText "欢迎使用个人博客系统"
+                          uid=1_52 InlineTextBox "欢迎使用个人博客系统"
+                      uid=1_53 generic
+                        uid=1_54 StaticText "这是一个现代化的个人博客管理系统，支持Markdown编辑、图片管理和文章发布。"
+                          uid=1_55 InlineTextBox "这是一个现代化的个人博客管理系统，支持Markdown编辑、图片管理和文章发布。"
+                      uid=1_56 ignored
+                        uid=1_57 generic
+                          uid=1_58 generic
+                            uid=1_59 ignored
+                              uid=1_60 ignored
+                                uid=1_61 generic
+                                  uid=1_62 StaticText "文章总数"
+                                    uid=1_63 InlineTextBox "文章总数"
+                                uid=1_64 generic
+                                  uid=1_65 generic
+                                    uid=1_66 image "file-text"
+                                  uid=1_67 generic
+                                    uid=1_68 StaticText "0"
+                                      uid=1_69 InlineTextBox "0"
+                        uid=1_70 generic
+                          uid=1_71 generic
+                            uid=1_72 ignored
+                              uid=1_73 ignored
+                                uid=1_74 generic
+                                  uid=1_75 StaticText "图片总数"
+                                    uid=1_76 InlineTextBox "图片总数"
+                                uid=1_77 generic
+                                  uid=1_78 generic
+                                    uid=1_79 image "picture"
+                                  uid=1_80 generic
+                                    uid=1_81 StaticText "0"
+                                      uid=1_82 InlineTextBox "0"
+                        uid=1_83 generic
+                          uid=1_84 generic
+                            uid=1_85 ignored
+                              uid=1_86 ignored
+                                uid=1_87 generic
+                                  uid=1_88 StaticText "草稿数量"
+                                    uid=1_89 InlineTextBox "草稿数量"
+                                uid=1_90 generic
+                                  uid=1_91 generic
+                                    uid=1_92 image "edit"
+                                  uid=1_93 generic
+                                    uid=1_94 StaticText "0"
+                                      uid=1_95 InlineTextBox "0"
+                      uid=1_96 generic
+                        uid=1_97 ignored
+                          uid=1_98 heading "快速开始" level="3"
+                            uid=1_99 StaticText "快速开始"
+                              uid=1_100 InlineTextBox "快速开始"
+                          uid=1_101 ignored
+                            uid=1_102 list
+                              uid=1_103 listitem level="1"
+                                uid=1_104 ListMarker "◦ "
+                                  uid=1_105 ignored
+                                uid=1_106 StaticText "点击"写文章"开始创建新的博客文章"
+                                  uid=1_107 InlineTextBox "点击"写文章"开始创建新的博客文章"
+                              uid=1_108 listitem level="1"
+                                uid=1_109 ListMarker "◦ "
+                                  uid=1_110 ignored
+                                uid=1_111 StaticText "使用"文章管理"查看和编辑已有文章"
+                                  uid=1_112 InlineTextBox "使用"文章管理"查看和编辑已有文章"
+                              uid=1_113 listitem level="1"
+                                uid=1_114 ListMarker "◦ "
+                                  uid=1_115 ignored
+                                uid=1_116 StaticText "通过"图片管理"上传和管理图片资源"
+                                  uid=1_117 InlineTextBox "通过"图片管理"上传和管理图片资源"

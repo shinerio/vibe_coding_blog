@@ -1,0 +1,160 @@
+uid=3_0 RootWebArea "Swagger UI" url="http://localhost:8080/api/v1/swagger-ui/index.html"
+  uid=3_1 ignored
+    uid=3_2 ignored
+      uid=3_3 generic
+        uid=3_4 generic
+          uid=3_5 ignored
+            uid=3_6 ignored
+              uid=3_7 ignored
+                uid=3_8 ignored
+                  uid=3_9 image "Swagger UI" url="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNDA3IDExNiI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5jbHMtMSB7DQogICAgICAgIGNsaXAtcGF0aDogdXJsKCNjbGlwLVNXX1RNLWxvZ28tb24tZGFyayk7DQogICAgICB9DQoNCiAgICAgIC5jbHMtMiB7DQogICAgICAgIGZpbGw6ICNmZmY7DQogICAgICB9DQoNCiAgICAgIC5jbHMtMyB7DQogICAgICAgIGZpbGw6ICM4NWVhMmQ7DQogICAgICB9DQoNCiAgICAgIC5jbHMtNCB7DQogICAgICAgIGZpbGw6ICMxNzM2NDc7DQogICAgICB9DQogICAgPC9zdHlsZT4NCiAgICA8Y2xpcFBhdGggaWQ9ImNsaXAtU1dfVE0tbG9nby1vbi1kYXJrIj4NCiAgICAgIDxyZWN0IHdpZHRoPSI0MDciIGhlaWdodD0iMTE2Ii8+DQogICAgPC9jbGlwUGF0aD4NCiAgPC9kZWZzPg0KICA8ZyBpZD0iU1dfVE0tbG9nby1vbi1kYXJrIiBjbGFzcz0iY2xzLTEiPg0KICAgIDxnIGlkPSJTV19Jbi1Qcm9kdWN0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC4zMDEpIj4NCiAgICAgIDxwYXRoIGlkPSJQYXRoXzI5MzYiIGRhdGEtbmFtZT0iUGF0aCAyOTM2IiBjbGFzcz0iY2xzLTIiIGQ9Ik0zNTkuMTUsNzAuNjc0aC0uN1Y2Ni45OTJoLTEuMjZ2LS42aDMuMjE5di42SDM1OS4xNVoiLz4NCiAgICAgIDxwYXRoIGlkPSJQYXRoXzI5MzciIGRhdGEtbmFtZT0iUGF0aCAyOTM3IiBjbGFzcz0iY2xzLTIiIGQ9Ik0zNjMuMjE3LDcwLjY3NCwzNjEuOTc1LDY3LjFoLS4wMjNxLjA1LjguMDUsMS40OTR2Mi4wODNoLS42MzZWNjYuMzkxaC45ODdsMS4xOSwzLjQwN2guMDE3bDEuMjI1LTMuNDA3aC45OXY0LjI4M0gzNjUuMVY2OC41NTZjMC0uMjEzLjAwNi0uNDkuMDE2LS44MzJzLjAyLS41NDkuMDI4LS42MjFoLS4wMjNsLTEuMjg2LDMuNTcxWiIvPg0KICAgICAgPHBhdGggaWQ9IlBhdGhfMjkzOCIgZGF0YS1uYW1lPSJQYXRoIDI5MzgiIGNsYXNzPSJjbHMtMyIgZD0iTTUwLjMyOCw5Ny42NjlBNDcuNjQyLDQ3LjY0MiwwLDEsMSw5Ny45NzEsNTAuMDI3LDQ3LjY0Miw0Ny42NDIsMCwwLDEsNTAuMzI4LDk3LjY2OVoiLz4NCiAgICAgIDxwYXRoIGlkPSJQYXRoXzI5MzkiIGRhdGEtbmFtZT0iUGF0aCAyOTM5IiBjbGFzcz0iY2xzLTMiIGQ9Ik01MC4zMjgsNC43NjlBNDUuMjU4LDQ1LjI1OCwwLDEsMSw1LjA3LDUwLjAyNyw0NS4yNTgsNDUuMjU4LDAsMCwxLDUwLjMyOCw0Ljc2OW0wLTQuNzY5YTUwLjAyNyw1MC4wMjcsMCwxLDAsNTAuMDI3LDUwLjAyN0E1MC4wMjcsNTAuMDI3LDAsMCwwLDUwLjMyOCwwWiIvPg0KICAgICAgPHBhdGggaWQ9IlBhdGhfMjk0MCIgZGF0YS1uYW1lPSJQYXRoIDI5NDAiIGNsYXNzPSJjbHMtNCIgZD0iTTMxLjgsMzMuODU0Yy0uMTU0LDEuNzEyLjA1OCwzLjQ4Mi0uMDU3LDUuMjEzYTQyLjY2NSw0Mi42NjUsMCwwLDEtLjY5Myw1LjE1Niw5LjUzLDkuNTMsMCwwLDEtNC4xLDUuODI5YzQuMDc5LDIuNjU0LDQuNTQsNi43NzEsNC44MSwxMC45NDYuMTM1LDIuMjUuMDc3LDQuNTIuMzA4LDYuNzUyLjE3MywxLjczMS44NDYsMi4xNzQsMi42MzYsMi4yMzEuNzMuMDIsMS40OCwwLDIuMzI3LDBWNzUuMzNjLTUuMjkuOS05LjY1Ny0uNi0xMC43MzQtNS4wNzlhMzAuNzYsMzAuNzYsMCwwLDEtLjY1NC01Yy0uMTE3LTEuNzg5LjA3Ni0zLjU3OC0uMDU4LTUuMzY3LS4zODYtNC45MDYtMS4wMi02LjU2LTUuNzEzLTYuNzkxdi02LjFBOS4xOTEsOS4xOTEsMCwwLDEsMjAuOSw0Ni44MmMyLjU3Ny0uMTM1LDMuNjc0LS45MjQsNC4yMzEtMy40NjNhMjkuMywyOS4zLDAsMCwwLC40ODEtNC4zMjksODIuMSw4Mi4xLDAsMCwxLC42LTguNDA2Yy42NzMtMy45ODIsMy4xMzYtNS45MDYsNy4yMzQtNi4xMzcsMS4xNTQtLjA1NywyLjMyNywwLDMuNjU1LDB2NS40NjRjLS41NTguMDM4LTEuMDM5LjExNS0xLjUzOS4xMTVDMzIuMjI2LDI5Ljk0OSwzMi4wNTIsMzEuMDg0LDMxLjgsMzMuODU0Wm02LjQwNiwxMi42NThoLS4wNzdhMy41MTUsMy41MTUsMCwxLDAtLjM0Niw3LjAyMWguMjMxYTMuNDYxLDMuNDYxLDAsMCwwLDMuNjU1LTMuMjUxVjUwLjA5YTMuNTIzLDMuNTIzLDAsMCwwLTMuNDYxLTMuNTc4Wm0xMi4wNjIsMGEzLjM3MywzLjM3MywwLDAsMC0zLjQ4MiwzLjI1MSwxLjc5LDEuNzksMCwwLDAsLjAyLjMyNywzLjMsMy4zLDAsMCwwLDMuNTc4LDMuNDQzLDMuMjYzLDMuMjYzLDAsMCwwLDMuNDQzLTMuNTU4LDMuMzA4LDMuMzA4LDAsMCwwLTMuNTU3LTMuNDYzWm0xMi4zNTEsMGEzLjU5MiwzLjU5MiwwLDAsMC0zLjY1NSwzLjQ4MkEzLjUyOSwzLjUyOSwwLDAsMCw2Mi41LDUzLjUzM2guMDM5YzEuNzY5LjMwOSwzLjU1OS0xLjQsMy42NzQtMy40NjJhMy41NzEsMy41NzEsMCwwLDAtMy42LTMuNTU5Wm0xNi45NDguMjg4Yy0yLjIzMi0uMS0zLjM0OC0uODQ2LTMuOS0yLjk2MmEyMS40NDcsMjEuNDQ3LDAsMCwxLS42MzUtNC4xMzZjLS4xNTQtMi41NzgtLjEzNS01LjE3NS0uMzA4LTcuNzUzLS40LTYuMTE3LTQuODI4LTguMjUyLTExLjI1NC03LjE5NXY1LjMxYzEuMDE5LDAsMS44MDgsMCwyLjYuMDE5LDEuMzY2LjAxOSwyLjQuNTM5LDIuNTM5LDIuMDU5LjEzNSwxLjM4NS4xMzUsMi43ODkuMjcsNC4xOTMuMjY5LDIuNzkuNDIyLDUuNjE4LjksOC4zNjlBOC43MTUsOC43MTUsMCwwLDAsNzMuNyw1MC4wNTJjLTMuNCwyLjI4OS00LjQwNiw1LjU1OS00LjU3OCw5LjIzNC0uMSwyLjUyLS4xNTQsNS4wNTktLjI4OSw3LjYtLjExNSwyLjMwOC0uOTIzLDMuMDU4LTMuMjUxLDMuMTE2LS42NTQuMDE5LTEuMjg5LjA3Ny0yLjAxOS4xMTV2NS40NDVjMS4zNjUsMCwyLjYxNi4wNzcsMy44NjYsMCwzLjg4Ni0uMjMxLDYuMjMzLTIuMTE3LDctNS44ODdBNDkuMDc5LDQ5LjA3OSwwLDAsMCw3NSw2My40Yy4xMzUtMS45MjMuMTE2LTMuODY2LjMwOC01Ljc3MS4yODktMi45ODIsMS42NTUtNC4yMTMsNC42MzYtNC40YTQuMDM3LDQuMDM3LDAsMCwwLC44MjgtLjE5MnYtNi4xYy0uNS0uMDU4LS44NDMtLjExNS0xLjIwOC0uMTM1WiIvPg0KICAgICAgPHBhdGggaWQ9IlBhdGhfMjk0MSIgZGF0YS1uYW1lPSJQYXRoIDI5NDEiIGNsYXNzPSJjbHMtMiIgZD0iTTE1Mi4yNzMsNTguMTIyYTExLjIyOCwxMS4yMjgsMCwwLDEtNC4zODQsOS40MjRxLTQuMzgzLDMuMzgyLTExLjksMy4zODItOC4xNCwwLTEyLjUyNC0yLjFWNjMuN2EzMi45LDMyLjksMCwwLDAsNi4xMzcsMS44NzksMzIuMywzMi4zLDAsMCwwLDYuNTc1LjY4OXE1LjMyMiwwLDguMDE1LTIuMDJhNi42MjYsNi42MjYsMCwwLDAsMi42OTItNS42Miw3LjIyMiw3LjIyMiwwLDAsMC0uOTU0LTMuOSw4Ljg4NSw4Ljg4NSwwLDAsMC0zLjE5NC0yLjgsNDQuNjM0LDQ0LjYzNCwwLDAsMC02LjgxLTIuOTExcS02LjM4Ny0yLjI4Ni05LjEyNi01LjQxN2ExMS45NTUsMTEuOTU1LDAsMCwxLTIuNzQtOC4xNzJBMTAuMTY0LDEwLjE2NCwwLDAsMSwxMjguMDM5LDI3cTMuOTc3LTMuMTMxLDEwLjUyLTMuMTMxYTMxLDMxLDAsMCwxLDEyLjU1NSwyLjVMMTQ5LjQ1NSwzMWEyOC4zODIsMjguMzgyLDAsMCwwLTExLjAyMS0yLjM4LDEwLjY2OCwxMC42NjgsMCwwLDAtNi42MDYsMS44MTYsNS45ODQsNS45ODQsMCwwLDAtMi4zOCw1LjA0MSw3LjcyMiw3LjcyMiwwLDAsMCwuODc3LDMuOSw4LjI0Miw4LjI0MiwwLDAsMCwyLjk1OSwyLjc4NiwzNi43LDM2LjcsMCwwLDAsNi4zNzEsMi44cTcuMiwyLjU2Niw5LjkxLDUuNTFBMTAuODQsMTAuODQsMCwwLDEsMTUyLjI3Myw1OC4xMjJaIi8+DQogICAgICA8cGF0aCBpZD0iUGF0aF8yOTQyIiBkYXRhLW5hbWU9IlBhdGggMjk0MiIgY2xhc3M9ImNscy0yIiBkPSJNMTg1LjI4OCw3MC4zLDE3OSw1MC4xN3EtLjU5NC0xLjg0OC0yLjIyMi04LjM5MWgtLjI1MXEtMS4yNTIsNS40NzktMi4xOTIsOC40NTNMMTY3Ljg0OSw3MC4zaC02LjAxMWwtOS4zNjEtMzQuMzE1aDUuNDQ3cTMuMzE4LDEyLjkzMSw1LjA1NywxOS42OTNhODAuMTEyLDgwLjExMiwwLDAsMSwxLjk4OCw5LjExMWguMjVxLjM0NS0xLjc4NSwxLjExMi00LjYxOHQxLjMzLTQuNDkzbDYuMjk0LTE5LjY5M2g1LjYzNWw2LjEzNywxOS42OTNhNjYuMzY5LDY2LjM2OSwwLDAsMSwyLjM3OSw5LjA0OGguMjUxYTMzLjE2MywzMy4xNjMsMCwwLDEsLjY3My0zLjQ3NXEuNTQ4LTIuMzQ3LDYuNTI4LTI1LjI2Nmg1LjM4NUwxOTEuNDU2LDcwLjNaIi8+DQogICAgICA8cGF0aCBpZD0iUGF0aF8yOTQzIiBkYXRhLW5hbWU9IlBhdGggMjk0MyIgY2xhc3M9ImNscy0yIiBkPSJNMjI1LjExNSw3MC4zbC0xLjAzMy00Ljg4NWgtLjI1YTE0LjQ0NiwxNC40NDYsMCwwLDEtNS4xMTksNC4zNjgsMTUuNjA4LDE1LjYwOCwwLDAsMS02LjM3MiwxLjE0M3EtNS4xLDAtOC0yLjYzdC0yLjktNy40ODNxMC0xMC40LDE2LjYyNi0xMC45bDUuODIzLS4xODhWNDcuNnEwLTQuMDM4LTEuNzM4LTUuOTY0VDIxNi42LDM5LjcxM2EyMi42MzMsMjIuNjMzLDAsMCwwLTkuNzA2LDIuNjNsLTEuNi0zLjk3N2EyNC40MzcsMjQuNDM3LDAsMCwxLDUuNTU3LTIuMTYsMjQuMDU2LDI0LjA1NiwwLDAsMSw2LjA1OC0uNzgzcTYuMTM2LDAsOS4xLDIuNzI0dDIuOTU5LDguNzM1VjcwLjNabS0xMS43NDEtMy42NjNBMTAuNTQ5LDEwLjU0OSwwLDAsMCwyMjEsNjMuOTc3YTkuODQ1LDkuODQ1LDAsMCwwLDIuNzcxLTcuNDUxdi0zLjFsLTUuMi4yMTlxLTYuMi4yMTktOC45MzksMS45MjZhNS44LDUuOCwwLDAsMC0yLjc0LDUuMzA2LDUuMzU0LDUuMzU0LDAsMCwwLDEuNzA3LDQuMjksNy4wODEsNy4wODEsMCwwLDAsNC43NzUsMS40NzJaIi8+DQogICAgICA8cGF0aCBpZD0iUGF0aF8yOTQ0IiBkYXRhLW5hbWU9IlBhdGggMjk0NCIgY2xhc3M9ImNscy0yIiBkPSJNMjY0LjYsMzUuOTg3djMuMjg3bC02LjM1Ni43NTJhMTEuMTYsMTEuMTYsMCwwLDEsMi4yNTUsNi44NTYsMTAuMTQ4LDEwLjE0OCwwLDAsMS0zLjQ0NCw4LjA0N3EtMy40NDQsMy05LjQ1NiwzYTE1LjczNCwxNS43MzQsMCwwLDEtMi44OC0uMjVRMjQxLjQsNTkuNDM4LDI0MS40LDYyLjFhMi4yNDIsMi4yNDIsMCwwLDAsMS4xNTksMi4wODIsOC40NTYsOC40NTYsMCwwLDAsMy45NzYuNjczaDYuMDc0cTUuNTczLDAsOC41NjMsMi4zNDhhOC4xNTgsOC4xNTgsMCwwLDEsMi45OSw2LjgyNSw5Ljc0Myw5Ljc0MywwLDAsMS00LjU3MSw4LjY4OHEtNC41NzIsMi45ODktMTMuMzM4LDIuOTktNi43MzIsMC0xMC4zNzktMi41YTguMDg3LDguMDg3LDAsMCwxLTMuNjQ3LTcuMDc2LDcuOTQ2LDcuOTQ2LDAsMCwxLDItNS40MTcsMTAuMjExLDEwLjIxMSwwLDAsMSw1LjYzNi0zLjEsNS40MjksNS40MjksMCwwLDEtMi4yMDctMS44NDcsNC44OSw0Ljg5LDAsMCwxLS44OTMtMi45MTIsNS41Myw1LjUzLDAsMCwxLDEtMy4yODgsMTAuNTI5LDEwLjUyOSwwLDAsMSwzLjE2Mi0yLjcyMyw5LjI3NSw5LjI3NSwwLDAsMS00LjMzNi0zLjcyNiwxMC45NDUsMTAuOTQ1LDAsMCwxLTEuNjc1LTYuMDEycTAtNS42MzQsMy4zODItOC42ODh0OS41OC0zLjA1MmExNy40MzksMTcuNDM5LDAsMCwxLDQuODUzLjYyNlpNMjM3LjIzMyw3Ni4wNjJhNC42Niw0LjY2LDAsMCwwLDIuMzQ4LDQuMjI3LDEyLjk3MywxMi45NzMsMCwwLDAsNi43MzIsMS40NHE2LjU0MywwLDkuNjktMS45NTZhNS45OTIsNS45OTIsMCwwLDAsMy4xNDctNS4zMDdxMC0yLjc4Ny0xLjcyMy0zLjg2N3QtNi40ODEtMS4wOGgtNi4yM2E4LjIwNSw4LjIwNSwwLDAsMC01LjUxLDEuNjksNi4wNDMsNi4wNDMsMCwwLDAtMS45NzMsNC44NTNabTIuODE4LTI5LjA4NmE2Ljk4NCw2Ljk4NCwwLDAsMCwyLjAzNSw1LjQ0OCw4LjEyMyw4LjEyMywwLDAsMCw1LjY2NywxLjg0N3E3LjYwOCwwLDcuNjA4LTcuMzg5LDAtNy43MzMtNy43LTcuNzMzYTcuNjI4LDcuNjI4LDAsMCwwLTUuNjM1LDEuOTcycS0xLjk3NiwxLjk3My0xLjk3NSw1Ljg1NVoiLz4NCiAgICAgIDxwYXRoIGlkPSJQYXRoXzI5NDUiIGRhdGEtbmFtZT0iUGF0aCAyOTQ1IiBjbGFzcz0iY2xzLTIiIGQ9Ik0yOTkuMTM2LDM1Ljk4N3YzLjI4N2wtNi4zNTYuNzUyYTExLjE2OCwxMS4xNjgsMCwwLDEsMi4yNTQsNi44NTYsMTAuMTQ1LDEwLjE0NSwwLDAsMS0zLjQ0NCw4LjA0N3EtMy40NDQsMy05LjQ1NSwzYTE1LjczNCwxNS43MzQsMCwwLDEtMi44OC0uMjVxLTMuMzIsMS43NTQtMy4zMTksNC40MTVhMi4yNDMsMi4yNDMsMCwwLDAsMS4xNTgsMi4wODIsOC40NTksOC40NTksMCwwLDAsMy45NzYuNjczaDYuMDc0cTUuNTc0LDAsOC41NjMsMi4zNDhhOC4xNTgsOC4xNTgsMCwwLDEsMi45OSw2LjgyNSw5Ljc0Myw5Ljc0MywwLDAsMS00LjU3MSw4LjY4OHEtNC41NywyLjk4OS0xMy4zMzcsMi45OS02LjczMiwwLTEwLjM3OS0yLjVhOC4wODgsOC4wODgsMCwwLDEtMy42NDgtNy4wNzYsNy45NDcsNy45NDcsMCwwLDEsMi01LjQxNywxMC4yMDcsMTAuMjA3LDAsMCwxLDUuNjM2LTMuMSw1LjQzMiw1LjQzMiwwLDAsMS0yLjIwOC0xLjg0Nyw0Ljg4OSw0Ljg4OSwwLDAsMS0uODkyLTIuOTEyLDUuNTMsNS41MywwLDAsMSwxLTMuMjg4LDEwLjUyOSwxMC41MjksMCwwLDEsMy4xNjItMi43MjMsOS4yNzEsOS4yNzEsMCwwLDEtNC4zMzYtMy43MjYsMTAuOTQ1LDEwLjk0NSwwLDAsMS0xLjY3NS02LjAxMnEwLTUuNjM0LDMuMzgxLTguNjg4dDkuNTgxLTMuMDUyYTE3LjQ0NCwxNy40NDQsMCwwLDEsNC44NTMuNjI2Wk0yNzEuNzcyLDc2LjA2MmE0LjY1OCw0LjY1OCwwLDAsMCwyLjM0OCw0LjIyNywxMi45NjksMTIuOTY5LDAsMCwwLDYuNzMxLDEuNDRxNi41NDQsMCw5LjY5MS0xLjk1NmE1Ljk5Myw1Ljk5MywwLDAsMCwzLjE0Ni01LjMwN3EwLTIuNzg3LTEuNzIyLTMuODY3dC02LjQ4MS0xLjA4aC02LjIzYTguMjA4LDguMjA4LDAsMCwwLTUuNTExLDEuNjlBNi4wNDIsNi4wNDIsMCwwLDAsMjcxLjc3Miw3Ni4wNjJabTIuODE4LTI5LjA4NmE2Ljk4NCw2Ljk4NCwwLDAsMCwyLjAzNSw1LjQ0OCw4LjEyMSw4LjEyMSwwLDAsMCw1LjY2NywxLjg0N3E3LjYwNywwLDcuNjA4LTcuMzg5LDAtNy43MzMtNy43LTcuNzMzYTcuNjI5LDcuNjI5LDAsMCwwLTUuNjM1LDEuOTcycS0xLjk3NSwxLjk3My0xLjk3NSw1Ljg1NVoiLz4NCiAgICAgIDxwYXRoIGlkPSJQYXRoXzI5NDYiIGRhdGEtbmFtZT0iUGF0aCAyOTQ2IiBjbGFzcz0iY2xzLTIiIGQ9Ik0zMTYuNzc4LDcwLjkyOHEtNy42MDgsMC0xMi4wMDctNC42MzR0LTQuNC0xMi44NjhxMC04LjMsNC4wODYtMTMuMTgxYTEzLjU3MywxMy41NzMsMCwwLDEsMTAuOTc0LTQuODg0QTEyLjkzOCwxMi45MzgsMCwwLDEsMzI1LjYzOCwzOS42cTMuNzYyLDQuMjQ3LDMuNzYyLDExLjJ2My4yODdIMzA1Ljc1N3EuMTU2LDYuMDQ0LDMuMDUzLDkuMTc0dDguMTU2LDMuMTMxYTI3LjYzMywyNy42MzMsMCwwLDAsMTAuOTU4LTIuMzE3djQuNjM0YTI3LjUsMjcuNSwwLDAsMS01LjIxMywxLjcwNiwyOS4yNTEsMjkuMjUxLDAsMCwxLTUuOTMzLjUxM1ptLTEuNDA5LTMxLjIxNWE4LjQ4OSw4LjQ4OSwwLDAsMC02Lj"
+                uid=3_10 generic
+                  uid=3_11 textbox value="/api/v1/v3/api-docs"
+                    uid=3_12 generic
+                      uid=3_13 StaticText "/api/v1/v3/api-docs"
+                        uid=3_14 InlineTextBox "/api/v1/v3/api-docs"
+                  uid=3_15 button "Explore"
+                    uid=3_16 StaticText "Explore"
+                      uid=3_17 InlineTextBox "Explore"
+          uid=3_18 ignored
+            uid=3_19 generic
+              uid=3_20 image
+            uid=3_21 ignored
+              uid=3_22 ignored
+                uid=3_23 generic
+                  uid=3_24 ignored
+                    uid=3_25 ignored
+                      uid=3_26 group
+                        uid=3_27 heading "OpenAPI definition v0 OAS 3.0" level="2"
+                          uid=3_28 StaticText "OpenAPI definition"
+                            uid=3_29 InlineTextBox "OpenAPI definition"
+                          uid=3_30 generic
+                            uid=3_31 generic
+                              uid=3_32 StaticText " "
+                                uid=3_33 InlineTextBox " "
+                              uid=3_34 StaticText "v0"
+                                uid=3_35 InlineTextBox "v0"
+                              uid=3_36 StaticText " "
+                                uid=3_37 InlineTextBox " "
+                          uid=3_38 generic
+                            uid=3_39 generic
+                              uid=3_40 StaticText "OAS 3.0"
+                                uid=3_41 InlineTextBox "OAS 3.0"
+                        uid=3_42 link "/api/v1/v3/api-docs" url="http://localhost:8080/api/v1/v3/api-docs"
+                          uid=3_43 StaticText "/api/v1/v3/api-docs"
+                            uid=3_44 InlineTextBox "/api/v1/v3/api-docs"
+                      uid=3_45 ignored
+              uid=3_46 ignored
+                uid=3_47 generic
+                  uid=3_48 ignored
+                    uid=3_49 StaticText "Servers"
+                      uid=3_50 InlineTextBox "Servers"
+                    uid=3_51 generic
+                      uid=3_52 LabelText
+                        uid=3_53 combobox expandable haspopup="menu" value="http://localhost:8080/api/v1 - Generated server url"
+                          uid=3_54 MenuListPopup
+                            uid=3_55 ignored
+                              uid=3_56 option "http://localhost:8080/api/v1 - Generated server url" selectable selected value="http://localhost:8080/api/v1 - Generated server url"
+              uid=3_57 ignored
+              uid=3_58 ignored
+                uid=3_59 generic
+                  uid=3_60 generic
+                    uid=3_61 ignored
+                      uid=3_62 heading "images 图片处理相关接口 Collapse operation" level="3"
+                        uid=3_63 link "images" url="http://localhost:8080/api/v1/swagger-ui/index.html#/images"
+                          uid=3_64 StaticText "images"
+                            uid=3_65 InlineTextBox "images"
+                        uid=3_66 ignored
+                          uid=3_67 ignored
+                            uid=3_68 paragraph
+                              uid=3_69 StaticText "图片处理相关接口"
+                                uid=3_70 InlineTextBox "图片处理相关接口"
+                        uid=3_71 button "Collapse operation" expandable expanded
+                      uid=3_72 ignored
+                        uid=3_73 generic
+                          uid=3_74 generic
+                            uid=3_75 ignored
+                              uid=3_76 button "post ​/images" expandable
+                                uid=3_77 ignored
+                                  uid=3_78 StaticText "POST"
+                                    uid=3_79 InlineTextBox "POST"
+                                uid=3_80 ignored
+                                  uid=3_81 link "/images" url="http://localhost:8080/api/v1/swagger-ui/index.html#/images/imagesPost"
+                                    uid=3_82 StaticText "/images"
+                                      uid=3_83 InlineTextBox "/images"
+                                uid=3_84 generic
+                                  uid=3_85 StaticText "上传图片"
+                                    uid=3_86 InlineTextBox "上传图片"
+                              uid=3_87 button "authorization button unlocked"
+                              uid=3_88 generic description="Copy to clipboard"
+                          uid=3_89 generic
+                            uid=3_90 ignored
+                              uid=3_91 button "get ​/images​/{id}" expandable
+                                uid=3_92 ignored
+                                  uid=3_93 StaticText "GET"
+                                    uid=3_94 InlineTextBox "GET"
+                                uid=3_95 ignored
+                                  uid=3_96 link "/images /{id}" url="http://localhost:8080/api/v1/swagger-ui/index.html#/images/imagesIdGet"
+                                    uid=3_97 StaticText "/images"
+                                      uid=3_98 InlineTextBox "/images"
+                                    uid=3_99 ignored
+                                    uid=3_100 StaticText "/{id}"
+                                      uid=3_101 InlineTextBox "/{id}"
+                                uid=3_102 generic
+                                  uid=3_103 StaticText "获取图片信息"
+                                    uid=3_104 InlineTextBox "获取图片信息"
+                              uid=3_105 button "authorization button unlocked"
+                              uid=3_106 generic description="Copy to clipboard"
+                          uid=3_107 generic
+                            uid=3_108 ignored
+                              uid=3_109 button "delete ​/images​/{id}" expandable
+                                uid=3_110 ignored
+                                  uid=3_111 StaticText "DELETE"
+                                    uid=3_112 InlineTextBox "DELETE"
+                                uid=3_113 ignored
+                                  uid=3_114 link "/images /{id}" url="http://localhost:8080/api/v1/swagger-ui/index.html#/images/imagesIdDelete"
+                                    uid=3_115 StaticText "/images"
+                                      uid=3_116 InlineTextBox "/images"
+                                    uid=3_117 ignored
+                                    uid=3_118 StaticText "/{id}"
+                                      uid=3_119 InlineTextBox "/{id}"
+                                uid=3_120 generic
+                                  uid=3_121 StaticText "删除图片"
+                                    uid=3_122 InlineTextBox "删除图片"
+                              uid=3_123 button "authorization button unlocked"
+                              uid=3_124 generic description="Copy to clipboard"
+              uid=3_125 ignored
+                uid=3_126 generic
+                  uid=3_127 generic
+                    uid=3_128 heading "Schemas" level="4"
+                      uid=3_129 button "Schemas" expandable expanded
+                        uid=3_130 ignored
+                          uid=3_131 StaticText "Schemas"
+                            uid=3_132 InlineTextBox "Schemas"
+                    uid=3_133 ignored
+                      uid=3_134 generic
+                        uid=3_135 ignored
+                        uid=3_136 generic
+                          uid=3_137 button "ImageResponse" expandable
+                            uid=3_138 StaticText "ImageResponse"
+                              uid=3_139 InlineTextBox "ImageResponse"
+                            uid=3_140 generic
+                              uid=3_141 generic
+                      uid=3_142 generic
+                        uid=3_143 ignored
+                        uid=3_144 generic
+                          uid=3_145 button "ErrorResponse" expandable
+                            uid=3_146 StaticText "ErrorResponse"
+                              uid=3_147 InlineTextBox "ErrorResponse"
+                            uid=3_148 generic
+                              uid=3_149 generic
+                      uid=3_150 generic
+                        uid=3_151 ignored
+                        uid=3_152 generic
+                          uid=3_153 button "ErrorResponseError" expandable
+                            uid=3_154 StaticText "ErrorResponseError"
+                              uid=3_155 InlineTextBox "ErrorResponseError"
+                            uid=3_156 generic
+                              uid=3_157 generic
+          uid=3_158 ignored
+            uid=3_159 generic
