@@ -21,7 +21,7 @@ import java.util.Optional;
  * 实现ArticlesApi接口，提供文章的CRUD操作
  */
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/")
 public class ArticleController implements ArticlesApi {
 
     private static final Logger log = LoggerFactory.getLogger(ArticleController.class);
@@ -146,5 +146,21 @@ public class ArticleController implements ArticlesApi {
             log.error("取消发布文章失败 - id: {}", id, e);
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
+    }
+
+    /**
+     * 处理OPTIONS预检请求
+     */
+    @RequestMapping(value = "/articles", method = RequestMethod.OPTIONS)
+    public ResponseEntity<Void> handleArticlesOptions() {
+        return ResponseEntity.ok().build();
+    }
+
+    /**
+     * 处理OPTIONS预检请求
+     */
+    @RequestMapping(value = "/articles/**", method = RequestMethod.OPTIONS)
+    public ResponseEntity<Void> handleArticleDetailOptions() {
+        return ResponseEntity.ok().build();
     }
 }

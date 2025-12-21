@@ -8,6 +8,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
@@ -202,5 +204,12 @@ public class ImageServiceImpl implements ImageService {
     private boolean hasValidImageExtension(String filename) {
         String extension = getFileExtension(filename).toLowerCase();
         return Set.of(".jpg", ".jpeg", ".png", ".gif", ".webp").contains(extension);
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public Page<Image> getImages(Pageable pageable) {
+        logger.debug("获取图片列表 - page: {}, size: {}", pageable.getPageNumber(), pageable.getPageSize());
+        return imageRepository.findAll(pageable);
     }
 }

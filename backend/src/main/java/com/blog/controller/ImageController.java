@@ -3,7 +3,9 @@ package com.blog.controller;
 import com.blog.api.ImagesApi;
 import com.blog.entity.Image;
 import com.blog.exception.ImageNotFoundException;
+import com.blog.model.ImagePageResponse;
 import com.blog.model.ImageResponse;
+import com.blog.service.ApiImageService;
 import com.blog.service.ImageService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,12 +30,27 @@ public class ImageController implements ImagesApi {
     
     @Autowired
     private ImageService imageService;
-    
+
+    @Autowired
+    private ApiImageService apiImageService;
+
+    @Override
+    public ResponseEntity<ImagePageResponse> imagesGet(Integer page, Integer size) {
+        try {
+            logger.info("获取图片列表 - page: {}, size: {}", page, size);
+
+            ImagePageResponse response = apiImageService.getImages(page, size);
+            return ResponseEntity.ok(response);
+        } catch (Exception e) {
+            logger.error("获取图片列表失败", e);
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }
+
     @Override
     public ResponseEntity<ImageResponse> imagesPost(MultipartFile file, String description) {
         logger.info("接收图片上传请求: 文件名={}, 描述={}", 
                    file.getOriginalFilename(), description);
-        
         try {
             Image savedImage = imageService.uploadImage(file, description);
             ImageResponse response = convertToImageResponse(savedImage);
@@ -43,6 +60,7 @@ public class ImageController implements ImagesApi {
             
         } catch (IllegalArgumentException e) {
             logger.warn("图片上传参数错误: {}", e.getMessage());
+
             throw e; // 将由GlobalExceptionHandler处理
         } catch (Exception e) {
             logger.error("图片上传失败: {}", e.getMessage(), e);
@@ -101,5 +119,7 @@ public class ImageController implements ImagesApi {
         }
         
         return response;
+
+        // 冒泡排序
     }
 }

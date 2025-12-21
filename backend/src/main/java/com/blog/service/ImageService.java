@@ -1,6 +1,8 @@
 package com.blog.service;
 
 import com.blog.entity.Image;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.Optional;
@@ -49,9 +51,17 @@ public interface ImageService {
     
     /**
      * 验证图片文件格式和大小
-     * 
+     *
      * @param file 文件
      * @throws IllegalArgumentException 当验证失败时
      */
     void validateImageFile(MultipartFile file);
+
+    /**
+     * 获取图片列表（分页）
+     *
+     * @param pageable 分页参数
+     * @return 图片分页数据
+     */
+    Page<Image> getImages(Pageable pageable);
 }

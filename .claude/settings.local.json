@@ -15,7 +15,20 @@
       "Bash(mvn test-compile exec:java:*)",
       "Bash(taskkill:*)",
       "Bash(cmd /c \"taskkill /F /IM java.exe\")",
-      "Bash(cmd:*)"
+      "Bash(cmd:*)",
+      "Bash(find:*)",
+      "Bash(./mvnw:*)",
+      "Bash(mvn compile:*)",
+      "Bash(timeout:*)",
+      "Bash(jps:*)",
+      "Bash(powershell \"Stop-Process -Id 22896 -Force\")",
+      "Bash(curl:*)",
+      "Bash(mvnw.cmd generate-sources:*)",
+      "Bash(mvn generate-sources:*)",
+      "Bash(powershell:*)",
+      "Bash(mvn clean compile:*)",
+      "Bash(mvnw.cmd test-compile:*)",
+      "Bash(rm:*)"
     ]
   }
 }

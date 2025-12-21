@@ -45,7 +45,7 @@ export interface Article {
   tags: string[]
   createdAt: string
   updatedAt: string
-  publishedAt?: string
+  publishedAt?: string | { present: boolean }
 }
 
 export interface CreateArticleRequest {

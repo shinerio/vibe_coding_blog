@@ -24,8 +24,35 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, onEdit, onPreview, o
     }
   }
 
-  const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString('zh-CN')
+  const formatDate = (dateString: string | any) => {
+    // 处理 publishedAt 返回 {"present":true} 的情况
+    if (typeof dateString === 'object' && dateString.present) {
+      return '已发布'
+    }
+
+    // 处理空值或无效值
+    if (!dateString || dateString === '') {
+      return '未设置'
+    }
+
+    // 处理字符串日期
+    if (typeof dateString === 'string') {
+      const date = new Date(dateString)
+      if (isNaN(date.getTime())) {
+        return 'Invalid Date'
+      }
+      // 返回完整的日期时间格式
+      return date.toLocaleString('zh-CN', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit'
+      })
+    }
+
+    // 其他情况返回 Invalid Date
+    return 'Invalid Date'
   }
 
   return (

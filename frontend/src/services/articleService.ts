@@ -58,7 +58,10 @@ export class ArticleService {
 
   // 保存文章Markdown内容
   static async saveArticleContent(id: number, content: string): Promise<void> {
-    await apiRequest.put(`/files/markdown/${id}`, { content }, {
+    await apiRequest.put(`/files/markdown/${id}`, content, {
+      headers: {
+        'Content-Type': 'text/plain',
+      },
       showSuccessMessage: true,
       successMessage: '文章内容保存成功',
     })

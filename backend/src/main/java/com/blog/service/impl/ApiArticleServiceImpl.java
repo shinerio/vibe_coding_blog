@@ -213,7 +213,7 @@ public class ApiArticleServiceImpl implements ApiArticleService {
      * 将实体转换为响应模型
      */
     private ArticleResponse convertToArticleResponse(Article article) {
-        return new ArticleResponse()
+        ArticleResponse response = new ArticleResponse()
                 .id(article.getId())
                 .title(article.getTitle())
                 .slug(article.getSlug())
@@ -221,8 +221,17 @@ public class ApiArticleServiceImpl implements ApiArticleService {
                 .status(convertEntityStatusToApi(article.getStatus()))
                 .tags(article.getTags() != null ? article.getTags() : List.of())
                 .createdAt(article.getCreatedAt().atOffset(java.time.ZoneOffset.UTC))
-                .updatedAt(article.getUpdatedAt().atOffset(java.time.ZoneOffset.UTC))
-                .publishedAt(article.getPublishedAt() != null ? article.getPublishedAt().atOffset(java.time.ZoneOffset.UTC) : null);
+                .updatedAt(article.getUpdatedAt().atOffset(java.time.ZoneOffset.UTC));
+
+        // 正确处理publishedAt字段
+        if (article.getPublishedAt() != null) {
+            response.publishedAt(article.getPublishedAt().atOffset(java.time.ZoneOffset.UTC));
+        } else {
+            // 明确设置为null，避免JsonNullable的{"present":true}序列化问题
+            response.setPublishedAt(org.openapitools.jackson.nullable.JsonNullable.of(null));
+        }
+
+        return response;
     }
 
     /**
