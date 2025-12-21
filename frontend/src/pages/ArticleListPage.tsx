@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Typography, Row, Col, Card, Input, Select, Button, Space, message, Modal, Pagination } from 'antd'
-import { PlusOutlined, SearchOutlined } from '@ant-design/icons'
+import { PlusOutlined, SearchOutlined, FileTextOutlined } from '@ant-design/icons'
 import { useNavigate } from 'react-router-dom'
 import ArticleCard from '../components/article/ArticleCard'
 import { ArticleService } from '../services/articleService'
 import { Article } from '../types/api'
 
-const { Title } = Typography
+const { Title, Paragraph } = Typography
 const { Option } = Select
 
 const ArticleListPage: React.FC = () => {
@@ -104,50 +104,122 @@ const ArticleListPage: React.FC = () => {
   }
 
   return (
-    <div>
-      <Title level={2}>文章管理</Title>
-      
+    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
+      {/* Header */}
+      <div style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: '32px',
+        flexDirection: window.innerWidth < 768 ? 'column' : 'row',
+        gap: window.innerWidth < 768 ? '16px' : '0'
+      }}>
+        <Title
+          level={1}
+          style={{
+            margin: 0,
+            fontSize: '2rem',
+            fontWeight: 600,
+            color: '#1a1a1a'
+          }}
+        >
+          文章管理
+        </Title>
+        <Button
+          type="primary"
+          icon={<PlusOutlined />}
+          onClick={handleCreateArticle}
+          size="large"
+          style={{
+            borderRadius: '8px',
+            height: '40px',
+            padding: '0 24px',
+            fontSize: '14px',
+            fontWeight: 500
+          }}
+        >
+          新建文章
+        </Button>
+      </div>
+
       {/* 搜索和筛选区域 */}
-      <Card style={{ marginBottom: 16 }}>
-        <Space wrap>
+      <Card
+        style={{
+          marginBottom: '24px',
+          borderRadius: '12px',
+          border: '1px solid #f0f0f0',
+          boxShadow: '0 2px 8px rgba(0,0,0,0.06)'
+        }}
+        bodyStyle={{ padding: '20px 24px' }}
+      >
+        <div style={{
+          display: 'flex',
+          gap: '12px',
+          flexWrap: 'wrap',
+          alignItems: 'center'
+        }}>
           <Input
             placeholder="搜索文章标题"
             value={searchTitle}
             onChange={(e) => setSearchTitle(e.target.value)}
-            style={{ width: 200 }}
+            style={{
+              width: window.innerWidth < 576 ? '100%' : '240px',
+              borderRadius: '8px',
+              height: '40px'
+            }}
             allowClear
           />
           <Select
             placeholder="文章状态"
             value={filterStatus}
             onChange={setFilterStatus}
-            style={{ width: 120 }}
+            style={{
+              width: window.innerWidth < 576 ? '100%' : '140px',
+              borderRadius: '8px'
+            }}
             allowClear
           >
             <Option value="DRAFT">草稿</Option>
             <Option value="PUBLISHED">已发布</Option>
           </Select>
-          <Button type="primary" icon={<SearchOutlined />} onClick={handleSearch}>
+          <Button
+            type="primary"
+            icon={<SearchOutlined />}
+            onClick={handleSearch}
+            style={{
+              borderRadius: '8px',
+              height: '40px',
+              padding: '0 20px'
+            }}
+          >
             搜索
           </Button>
-          <Button onClick={handleReset}>
+          <Button
+            onClick={handleReset}
+            style={{
+              borderRadius: '8px',
+              height: '40px',
+              padding: '0 20px'
+            }}
+          >
             重置
           </Button>
-          <Button type="primary" icon={<PlusOutlined />} onClick={handleCreateArticle}>
-            新建文章
-          </Button>
-        </Space>
+        </div>
       </Card>
-      
+
       {/* 文章列表 */}
-      <Row gutter={[16, 16]}>
+      <Row gutter={[24, 24]}>
         {loading ? (
           <Col span={24}>
-            <Card loading={true} style={{ height: 200 }} />
+            {[1, 2, 3].map((i) => (
+              <Col xs={24} sm={12} md={8} lg={6} key={i} style={{ marginBottom: '24px' }}>
+                <Card loading style={{ height: '280px', borderRadius: '12px' }} />
+              </Col>
+            ))}
           </Col>
         ) : articles.length > 0 ? (
           articles.map(article => (
-            <Col xs={24} sm={12} md={8} lg={6} key={article.id}>
+            <Col xs={24} sm={12} md={8} key={article.id}>
               <ArticleCard
                 article={article}
                 onEdit={handleEdit}
@@ -158,10 +230,45 @@ const ArticleListPage: React.FC = () => {
           ))
         ) : (
           <Col span={24}>
-            <Card>
-              <div style={{ textAlign: 'center', padding: '40px 0' }}>
-                <p>暂无文章数据</p>
-                <Button type="primary" onClick={handleCreateArticle}>
+            <Card
+              style={{
+                textAlign: 'center',
+                borderRadius: '12px',
+                border: '1px solid #f0f0f0',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.06)'
+              }}
+              bodyStyle={{ padding: '60px 24px' }}
+            >
+              <div style={{ textAlign: 'center' }}>
+                <div style={{
+                  fontSize: '64px',
+                  color: '#d9d9d9',
+                  marginBottom: '24px',
+                  lineHeight: 1
+                }}>
+                  <FileTextOutlined />
+                </div>
+                <Title level={3} style={{ color: '#666', marginBottom: '16px', fontWeight: 400 }}>
+                  暂无文章数据
+                </Title>
+                <Paragraph style={{ color: '#999', marginBottom: '24px', fontSize: '16px' }}>
+                  {searchTitle || filterStatus
+                    ? '没有找到匹配的文章，试试调整搜索条件'
+                    : '开始创建你的第一篇博客文章吧'
+                  }
+                </Paragraph>
+                <Button
+                  type="primary"
+                  icon={<PlusOutlined />}
+                  onClick={handleCreateArticle}
+                  size="large"
+                  style={{
+                    borderRadius: '8px',
+                    height: '48px',
+                    padding: '0 32px',
+                    fontSize: '16px'
+                  }}
+                >
                   创建第一篇文章
                 </Button>
               </div>
@@ -169,19 +276,33 @@ const ArticleListPage: React.FC = () => {
           </Col>
         )}
       </Row>
-      
+
       {/* 分页 */}
-      <div style={{ marginTop: 16, textAlign: 'right' }}>
-        <Pagination
-          current={currentPage}
-          pageSize={pageSize}
-          total={total}
-          onChange={handlePageChange}
-          showSizeChanger
-          showQuickJumper
-          showTotal={(total) => `共 ${total} 篇文章`}
-        />
-      </div>
+      {total > 0 && (
+        <div style={{
+          marginTop: '40px',
+          textAlign: 'center',
+          padding: '20px 0',
+          borderTop: '1px solid #f0f0f0'
+        }}>
+          <Pagination
+            current={currentPage}
+            pageSize={pageSize}
+            total={total}
+            onChange={handlePageChange}
+            showSizeChanger
+            showQuickJumper
+            showTotal={(total, range) =>
+              `第 ${range[0]}-${range[1]} 篇，共 ${total} 篇文章`
+            }
+            pageSizeOptions={['6', '12', '24', '48']}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center'
+            }}
+          />
+        </div>
+      )}
     </div>
   )
 }
