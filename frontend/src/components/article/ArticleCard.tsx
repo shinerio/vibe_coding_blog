@@ -3,7 +3,7 @@ import { Card, Tag, Space, Typography, Button, Tooltip } from 'antd'
 import { EditOutlined, EyeOutlined, DeleteOutlined, CalendarOutlined, ClockCircleOutlined } from '@ant-design/icons'
 import { Article } from '../../types/api'
 
-const { Title, Text, Paragraph } = Typography
+const { Title, Paragraph } = Typography
 
 interface ArticleCardProps {
   article: Article
@@ -196,7 +196,8 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, onEdit, onPreview, o
         paddingTop: '16px',
         borderTop: '1px solid #f5f5f5',
         display: 'flex',
-        gap: '8px'
+        gap: '8px',
+        flexWrap: 'wrap'
       }}>
         <Tooltip title="预览文章">
           <Button
