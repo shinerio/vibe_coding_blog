@@ -2,36 +2,52 @@ version: '3.8'
 
 services:
   frontend:
-    build: 
+    build:
       context: ./frontend
       dockerfile: Dockerfile
     ports:
-      - "3000:80"
+      - "0.0.0.0:3000:80"
     depends_on:
-      - backend
+      backend:
+        condition: service_healthy
     environment:
-      - REACT_APP_API_URL=http://localhost:8080
+      - NODE_ENV=production
     networks:
       - blog-network
+    restart: unless-stopped
 
   backend:
     build:
-      context: ./backend
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: backend/Dockerfile
+      args:
+        - MAVEN_OPTS=-Xmx512m
     ports:
-      - "8080:8080"
+      - "0.0.0.0:8080:8080"
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/blog
       - SPRING_DATASOURCE_USERNAME=blog_user
       - SPRING_DATASOURCE_PASSWORD=blog_pass
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - BLOG_STORAGE_MARKDOWN_PATH=/app/data/markdown
+      - BLOG_STORAGE_IMAGES_PATH=/app/data/images
+      - APP_IMAGE_STORAGE_PATH=/app/data/images
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     networks:
       - blog-network
     volumes:
-      - ./data/markdown:/app/data/markdown
-      - ./data/images:/app/data/images
+      - markdown_data:/app/data/markdown
+      - images_data:/app/data/images
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:8080/api/v1/articles" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
 
   db:
     image: postgres:15-alpine
@@ -40,15 +56,24 @@ services:
       - POSTGRES_USER=blog_user
       - POSTGRES_PASSWORD=blog_pass
     ports:
-      - "5432:5432"
+      - "127.0.0.1:5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      - ./backend/src/main/resources/db/migration:/docker-entrypoint-initdb.d
     networks:
       - blog-network
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U blog_user -d blog" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
 
 volumes:
   postgres_data:
+  markdown_data:
+  images_data:
+
 
 networks:
   blog-network:

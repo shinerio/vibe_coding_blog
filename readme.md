@@ -67,11 +67,62 @@ npm run dev
 
 ## Docker部署
 
-使用Docker Compose一键部署：
+### 构建镜像
 
 ```bash
-docker-compose up -d
+# 构建所有服务镜像
+docker-compose build
+
+# 仅构建前端镜像
+docker-compose build frontend
+
+# 仅构建后端镜像
+docker-compose build backend
+
+# 无缓存重新构建
+docker-compose build --no-cache
 ```
+
+### 启动服务
+
+```bash
+# 后台启动所有服务
+docker-compose up -d
+
+# 前台启动（可查看日志）
+docker-compose up
+
+# 启动并重新构建
+docker-compose up -d --build
+```
+
+### 服务管理
+
+```bash
+# 查看服务状态
+docker-compose ps
+
+# 查看日志
+docker-compose logs -f
+
+# 查看特定服务日志
+docker-compose logs -f backend
+
+# 停止服务
+docker-compose stop
+
+# 停止并删除容器
+docker-compose down
+
+# 停止并删除容器及数据卷
+docker-compose down -v
+```
+
+### 访问地址
+
+- **本地访问**: http://localhost:3000
+- **远程访问**: http://<服务器IP>:3000
+- **后端API**: http://<服务器IP>:8080/api/v1
 
 ## 开发环境
 
