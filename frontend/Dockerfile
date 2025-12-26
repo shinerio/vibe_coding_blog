@@ -12,8 +12,13 @@ RUN npm ci
 # Copy source code
 COPY . .
 
+<<<<<<< HEAD
 # Build the application using npx to avoid permission issues
 RUN npx vite build
+=======
+# Build the application
+RUN npm run build
+>>>>>>> c9a37d3766af23d9d8488fa8292a2873a86d1f70
 
 # Production stage
 FROM nginx:alpine
